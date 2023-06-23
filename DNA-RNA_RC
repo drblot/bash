@@ -1,0 +1,8 @@
+#!/bin/bash
+read -e -p "Enter filename: " file
+OUTPUT="${file%.*}"_RC.txt
+echo "$(cat $file)" | tr ACGTacgT UGCAUGCA | rev > $OUTPUT
+
+
+#FILEPATH=echo "${file%.*}"
+#OUTPUT=echo ${FILEPATH%.*}
