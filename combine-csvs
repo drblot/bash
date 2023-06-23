@@ -1,0 +1,1 @@
+cat *.csv > combined-files.csv
